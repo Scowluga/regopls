@@ -19,6 +19,7 @@ let client: LanguageClient;
 export function activate(context: ExtensionContext) {
 	// The server is a started as a separate app and listens on port 5007 (7998) with TCP connection
 	// Specify TCP by specifying port and host
+	// TODO: Figure out how to pick the right port
 	let connectionInfo = {
 		port: 7998,
 		host: '127.0.0.1'
